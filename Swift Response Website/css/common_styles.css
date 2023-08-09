@@ -63,6 +63,7 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
+        background: #f7fff9;
 }
 
 @keyframes fadeOut {
@@ -75,7 +76,9 @@ body {
         display: none;
     }
 }
-
+.hidden{
+    display: none;
+}
 .spinner {
     width: 56px;
     height: 56px;
