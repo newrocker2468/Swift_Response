@@ -287,11 +287,7 @@ h6 {
 .cssbuttons-io:active {
     transform: scale(0.95);
 }
-#delete{
-    background: linear-gradient(to bottom, #ffcece, #ff9d9d);
-    color: #000000;
-    border: 1px solid #000000;
-}
+
 .btn-placement {
     display: flex;
     justify-content: center;
@@ -320,7 +316,7 @@ h6 {
 
 
 .input {
-    border: none;
+    border: 1px solid #ccc;
 
 
 }

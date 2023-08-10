@@ -56,3 +56,10 @@
     transform: translateY(30px);
     transition-duration: .3s;
 }
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
