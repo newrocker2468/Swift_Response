@@ -16,6 +16,7 @@
         "button-name": "off"
       }
     ],
-    "compat-api/css": "off"
+    "compat-api/css": "off",
+    "no-inline-styles": "off"
   }
 }
