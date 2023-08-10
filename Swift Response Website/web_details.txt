@@ -47,7 +47,8 @@ x(twitter)
 Discord
 
 
-
+navbar work is in progress its almost done just need to add profile pic space and maybe some other links when in larger screens or maybe just need to remove the menu in larger screens 
+if u read this write ur opinion here
 
 
 
