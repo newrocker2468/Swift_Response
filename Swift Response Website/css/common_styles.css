@@ -8,33 +8,105 @@
 
 body {
     background: linear-gradient(to right, #E1F1F3, #F4FAF5);
-    /* background: linear-gradient(35deg, #e0f1ff, #e6ffe6); */
-    /* background: linear-gradient(135deg, #d6f3ff, #daffda); */
     font-family: Lato, Cons !important;
 }
 
-
-
 .navbar {
-
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex: 1;
-
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
-    /*     background: linear-gradient(to right, #E1F1F3, #F4FAF5); */
     background: linear-gradient(to bottom, #ecfdff, #f7fff9);
-    /* background: rgba(220, 255, 239, 0.85);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
-    /* Other styling properties */
-    z-index: 100;/
+    z-index: 100;
+}
+.logo-name {
+    display: none;
+}
+@media(max-width:630px){
+   .list{
+        position: fixed;
+       display: flex;
+       flex-direction: column;
+       inset: 0 0 0 30%;
+   /*     background:hsl(0, 0%, 100%, 0.1); */
+    background: linear-gradient(to left, #ecfdff, #f7fff9);
+       padding: min(30vh,10rem) 2rem;
+       -webkit-backdrop-filter: blur(1rem);
+        backdrop-filter: blur(1rem);
+                transform: translateX(100%);
+                        opacity: 0;
+transition: opacity 800ms ease-in-out transform 400ms;
+    }
+.list>li {
+        margin: 1rem;
+    }
+    .btn-i{
+       z-index: 9999;
+    }
+    .visible{
+        transform: translateX(0);
+        transition: opacity 800ms ease-in-out transform 400ms; 
+        opacity: 0.95;
+    }
+#primary-nav {
+    transition: transform 400ms,opacity 600ms;
+    }
+.login a button{
+    padding: 1em !important;
+}
+.logo-name {
+    display: inline;
+    position: relative;
+        left: 6.5%;
+}
+.login a{
+    margin: 1em 0 1em 0 !important;
+}
+.login{
+    position: relative;
+    right: -5%;
+}
+.name{
+    font-weight: bold !important;
+}
+/* .logo-name a span{
+    transition: all 500ms ease-in-out;
+}
+.logo-name a span::after{
+    content:"";
+    width: 1px;
+        height: 2px;
+    background: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: all 500ms ease-in-out;
+}
+.logo-name a span:hover::after{    
+    background: #000;
+       transform: scaleX(130);
+        transition: transform 500ms ease-in-out;
+            left: 62%;
+    } */
 }
 
 
+.btn-i{
+    background: transparent;
+border: none;
+}
+.btn-i i{
+        margin: 0.5em;
+        aspect-ratio: 1/1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8em;
+}
 /* .nav-links::before {
     content: "";
     position: absolute;

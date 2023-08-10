@@ -3,7 +3,7 @@ Important points
 like index.html is a new file u created  then link it to commonstyles.css and create index.css for it
 2.just copy nav bar and footer properly and rem all the content in a div with some class name so u should have that div inside which is the navbar main con and footer etc 
 3.also link the index.js file otherwise the loader wont work
-
+4.imp notice removed whatsapp and added discord in the footer
 
 
 
@@ -19,7 +19,6 @@ download app (opt)
 
 Pages pending
 
-delete acc
 privacy policy 
 contact us
 feedback
@@ -36,6 +35,7 @@ pages completed
 home
 login
 create new acc
+delete your account
 
 
 
@@ -44,7 +44,12 @@ also need to link the following links
 facebook
 instagram
 x(twitter)
-whatsapp
+Discord
+
+
+
+
+
 
 
 

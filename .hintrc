@@ -15,6 +15,7 @@
       {
         "button-name": "off"
       }
-    ]
+    ],
+    "compat-api/css": "off"
   }
 }
