@@ -6,7 +6,7 @@
         height: 100%;
         top: 0;
         left: 20%;
-        background-color: #8fff67;
+        background-color: #5affc0;
         z-index: -9999;
     }
 
@@ -17,7 +17,7 @@
         height: 100%;
         top: 0;
         right: 20%;
-        background-color: #8fff67;
+        background-color: #5affc0;
         z-index: -9999;
     }
 
@@ -67,7 +67,7 @@
 }
 
 .search {
-    background-color: #8fff67;
+    background-color: #5affc0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,7 +132,7 @@
 
 .search-btn {
     padding: 0.5em 1.5em;
-    background-color: #8fff67;
+    background-color: #5affc0;
     font-family: Lato, Cons !important;
     font-weight: bold;
     border: none;

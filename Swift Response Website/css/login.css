@@ -10,13 +10,97 @@
     z-index: -999;
 }
 
-.navbar {
-    background: linear-gradient(to bottom, #ecfdff, #f7fff9);
+
+
+.main{
+    display: grid;
+    grid: 100vh / 50% 50%;
+    place-content: center;
+    place-items: center;
+    
 }
+.new-login-page,.signup-page{
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+width: 100%;
+height: 100%;
+}
+.new-login-page{
+ 
+    justify-content: flex-start !important;
+}
+label{
+    font-size: 1em;
+    font-weight: 500;
+ 
+}
+.rem_forgot-pass{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.forgot-pass > a{
+    font-size: 0.8em;
+    text-decoration: none;
+color: #37ec7c;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+.btn-login > a > button{
+    padding: 0.7em 10em;
+    border-radius: 30px;
+        border: none;
+}
+.form-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.username,.password{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:1em;
+    border-radius: 30px;
+    background:white;
+    padding:1em 1em;
+    width: 100%;
+    border: 2px solid #e4e4e4;
+}
+.new-login_btn{
+        font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #37ec7c;
+}
+.sign-in_btn{
 
-
-
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 0.5em 7em;
+                border-radius: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background:#FFFFFF;
+                margin: 1em;
+                border: 2px solid #e4e4e4;
+}
+button{
+    cursor: pointer !important;
+}
+.new-login-page{
+    background: #FFFFFF;
+}
 .cssbuttons-io {
     position: relative;
     font-family: inherit;
@@ -33,7 +117,24 @@
     border: 1px solid #000;
 
 }
+.video-container {
+    position: relative;
+    width: 100%;
+    /* Set the desired width */
+    height: 100vh;
+    /* Set the desired height */
+    overflow: hidden;
+    border-radius: 20px;
+}
 
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    /* Cover the entire height of the container */
+}
 .cssbuttons-io:hover {
     color: #000;
     border: 1px solid #EBF6F4;
@@ -81,9 +182,9 @@
     transform: scale(0.95);
 }
 
-.btn-placement {
+/* .btn-placement {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 2em;
-}
+} */

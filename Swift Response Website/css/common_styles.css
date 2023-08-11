@@ -7,7 +7,12 @@
 }
 
 body {
-    background: linear-gradient(to right, #E1F1F3, #F4FAF5);
+/*     background: linear-gradient(to right, #E6F7FA, #F8EBE4); */
+   
+/*     background-image: radial-gradient(circle, #e3f4f8, #e9f5fb, #f0f7fd, #f5f9fe, #fafbfe, #fbfbfd, #fcfafd, #fcfafc, #fcf6f8, #fcf1f3, #fbedeb, #f9eae3); */
+/*     background: linear-gradient(to right, #d4feff, #ffffff); */
+/*     #02aab0 #00cdac */
+/*     background: linear-gradient(to left, #ecfdff, #f7fff9); */
     font-family: Lato, Cons !important;
 }
 
@@ -20,8 +25,11 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(to bottom, #ecfdff, #f7fff9);
     z-index: 100;
+        background: white;
+        /*     -webkit-backdrop-filter: blur(1rem);
+                backdrop-filter: blur(1rem); */
+
 }
 .logo-name {
     display: none;
@@ -32,8 +40,9 @@ body {
        display: flex;
        flex-direction: column;
        inset: 0 0 0 30%;
-   /*     background:hsl(0, 0%, 100%, 0.1); */
-    background: linear-gradient(to left, #ecfdff, #f7fff9);
+/*        background:hsl(0, 0%, 100%, 0.1); */
+/*     background: linear-gradient(to left, #ecfdff, #f7fff9); */
+background: white;
        padding: min(30vh,10rem) 2rem;
        -webkit-backdrop-filter: blur(1rem);
         backdrop-filter: blur(1rem);
@@ -258,9 +267,35 @@ a {
     align-items: center;
 
 }
+.span-or{
+    color: grey;
+    
 
+}
+.line-part{
+    position: relative;
+    margin-bottom: 1em;
+}
+.span-or::before{
+   content: "";
+   position: absolute;
+   width: 100px;
+   height: 2px;
+   background: grey;
+   left: -55%;
+   bottom: 7px;
+}
+.span-or::after{
+    content: "";
+        position: absolute;
+        width: 100px;
+        height: 2px;
+        background: grey;
+        bottom: 7px;
+        right: -55%;
+}
 a>button {
-    background-color: #8fff67;
+    background-color: #5affc0;
 
     border-radius: 13px;
 
@@ -269,7 +304,7 @@ a>button {
 }
 
 ::selection {
-    background-color: #A9FE8B !important;
+    background-color: #5affc0 !important;
     color: #000000;
     -webkit-text-fill-color: #000000;
 

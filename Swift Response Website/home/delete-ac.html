@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swift Response</title>
     <script src="https://kit.fontawesome.com/dac0718308.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/common_styles.css">
+
         <link rel="stylesheet" href="../css/delete-ac.css">
-    <script src="../js/index.js"></script>
+            <link rel="stylesheet" href="../css/common_styles.css">
+
 
 
 </head>
@@ -19,26 +20,28 @@
     </div>
 
     <div id="content" class="hidden">
-        <div class="navbar">
-            <div class="logo">
-                <i class="fa-brands fa-pix fa-2xl"></i>
-            </div>
-
-            <div class="nav-links">
-                <ul class="list">
-                    <li><a href="index.html" id="home" class="cur-page">Home</a></li>
-                    <li><a href="#services" id="services">Services</a></li>
-                    <li><a href="#Aboutus" id="Aboutus">About Us</a></li>
-                    <li><a href="#contact" id="contact">Contact</a></li>
-
-                </ul>
-            </div>
-            <div class="login">
-                <a href="login.html"><button id="btn">Log In</button></a>
-
-                <i class="fa-solid fa-bars fa-lg"></i>
-            </div>
+    <div class="navbar">
+        <div class="logo">
+            <i class="fa-brands fa-pix fa-2xl"></i>
         </div>
+        <div class="logo-name"><a href="index.html"><span class="name">SwiftResponse</span></a></div>
+        <div class="nav-links">
+            <ul class="list" id="primary-nav" data-visible="false">
+                <li><a href="index.html" id="home" class="cur-page">Home</a></li>
+                <li><a href="#services" id="services">Services</a></li>
+                <li><a href="#Aboutus" id="Aboutus">About Us</a></li>
+                <li><a href="#contact" id="contact">Contact</a></li>
+    
+            </ul>
+        </div>
+        <div class="login">
+            <a href="login.html"><button id="btn">Log In</button></a>
+    
+            <button class="btn-i"><i class="fa-solid fa-bars fa-lg" id="menu"></i></button>
+        </div>
+    </div>
+
+
         <div class="main">
             <h1>Delete your account</h1>
             <form action="" class="form">
@@ -136,5 +139,6 @@
 
 
         </div>
+            <script src="../js/index.js"></script>
         </body>
         </html>
