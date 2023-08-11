@@ -399,7 +399,7 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2em;
+    margin: 1em;
 }
 .input {
     width: 100%;
@@ -453,7 +453,6 @@ h6 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 10%;
 
 }
 
@@ -553,7 +552,7 @@ h6 {
 
 }
 .note{
-    margin: 2em;
+    margin: 1em;
 }
 .note p {
         display: inline;
