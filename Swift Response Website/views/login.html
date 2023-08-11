@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swift Response</title>
+    <script src="https://kit.fontawesome.com/dac0718308.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/common_styles.css">
+    <link rel="stylesheet" href="../css/login.css">
+
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+    <div id="content" class="hidden">
+         <div class="navbar">
+            <div class="logo">
+                <i class="fa-brands fa-pix fa-2xl"></i>
+            </div>
+            <div class="logo-name"><a href="index.html"><span class="name">SwiftResponse</span></a></div>
+            <div class="nav-links">
+                <ul class="list" id="primary-nav" data-visible="false">
+                    <li><a href="index.html" id="home">Home</a></li>
+                    <li><a href="#services" id="services">Services</a></li>
+                    <li><a href="#Aboutus" id="Aboutus">About Us</a></li>
+                    <li><a href="#contact" id="contact">Contact</a></li>
+
+                </ul>
+            </div>
+            <div class="login">
+                <a href="login.html"><button id="btn">Log In</button></a>
+
+                <button  class="btn-i"><i class="fa-solid fa-bars fa-lg" id="menu"></i></button>
+            </div>
+        </div>
+ 
+
+<!--         <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 490" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                    <stop stop-color="rgba(98.847, 231.43, 255, 1)" offset="0%"></stop>
+                    <stop stop-color="rgba(240.789, 255, 231.314, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+                d="M0,294L60,261.3C120,229,240,163,360,171.5C480,180,600,261,720,318.5C840,376,960,408,1080,392C1200,376,1320,310,1440,294C1560,278,1680,310,1800,326.7C1920,343,2040,343,2160,334.8C2280,327,2400,310,2520,269.5C2640,229,2760,163,2880,122.5C3000,82,3120,65,3240,114.3C3360,163,3480,278,3600,310.3C3720,343,3840,294,3960,277.7C4080,261,4200,278,4320,236.8C4440,196,4560,98,4680,81.7C4800,65,4920,131,5040,171.5C5160,212,5280,229,5400,228.7C5520,229,5640,212,5760,245C5880,278,6000,359,6120,400.2C6240,441,6360,441,6480,416.5C6600,392,6720,343,6840,334.8C6960,327,7080,359,7200,359.3C7320,359,7440,327,7560,269.5C7680,212,7800,131,7920,114.3C8040,98,8160,147,8280,147C8400,147,8520,98,8580,73.5L8640,49L8640,490L8580,490C8520,490,8400,490,8280,490C8160,490,8040,490,7920,490C7800,490,7680,490,7560,490C7440,490,7320,490,7200,490C7080,490,6960,490,6840,490C6720,490,6600,490,6480,490C6360,490,6240,490,6120,490C6000,490,5880,490,5760,490C5640,490,5520,490,5400,490C5280,490,5160,490,5040,490C4920,490,4800,490,4680,490C4560,490,4440,490,4320,490C4200,490,4080,490,3960,490C3840,490,3720,490,3600,490C3480,490,3360,490,3240,490C3120,490,3000,490,2880,490C2760,490,2640,490,2520,490C2400,490,2280,490,2160,490C2040,490,1920,490,1800,490C1680,490,1560,490,1440,490C1320,490,1200,490,1080,490C960,490,840,490,720,490C600,490,480,490,360,490C240,490,120,490,60,490L0,490Z">
+            </path>
+            <defs>
+                <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
+                    <stop stop-color="rgba(227.83, 255, 209.716, 1)" offset="0%"></stop>
+                    <stop stop-color="rgba(133.404, 236.646, 255, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)"
+                d="M0,343L60,310.3C120,278,240,212,360,212.3C480,212,600,278,720,277.7C840,278,960,212,1080,187.8C1200,163,1320,180,1440,179.7C1560,180,1680,163,1800,204.2C1920,245,2040,343,2160,334.8C2280,327,2400,212,2520,147C2640,82,2760,65,2880,122.5C3000,180,3120,310,3240,334.8C3360,359,3480,278,3600,228.7C3720,180,3840,163,3960,155.2C4080,147,4200,147,4320,187.8C4440,229,4560,310,4680,343C4800,376,4920,359,5040,359.3C5160,359,5280,376,5400,392C5520,408,5640,425,5760,408.3C5880,392,6000,343,6120,326.7C6240,310,6360,327,6480,334.8C6600,343,6720,343,6840,302.2C6960,261,7080,180,7200,179.7C7320,180,7440,261,7560,318.5C7680,376,7800,408,7920,359.3C8040,310,8160,180,8280,179.7C8400,180,8520,310,8580,375.7L8640,441L8640,490L8580,490C8520,490,8400,490,8280,490C8160,490,8040,490,7920,490C7800,490,7680,490,7560,490C7440,490,7320,490,7200,490C7080,490,6960,490,6840,490C6720,490,6600,490,6480,490C6360,490,6240,490,6120,490C6000,490,5880,490,5760,490C5640,490,5520,490,5400,490C5280,490,5160,490,5040,490C4920,490,4800,490,4680,490C4560,490,4440,490,4320,490C4200,490,4080,490,3960,490C3840,490,3720,490,3600,490C3480,490,3360,490,3240,490C3120,490,3000,490,2880,490C2760,490,2640,490,2520,490C2400,490,2280,490,2160,490C2040,490,1920,490,1800,490C1680,490,1560,490,1440,490C1320,490,1200,490,1080,490C960,490,840,490,720,490C600,490,480,490,360,490C240,490,120,490,60,490L0,490Z">
+            </path>
+        </svg> -->
+
+        <div class="main">
+            <div class="div-1 new-login-page">
+   
+                        <h1 class="name">Login</h1>
+                <div class="sign-in_google"><button onclick="window.location.href = 'auth/google'" id="loginButton" class="sign-in_btn"><img src="../icons/google_icon.png" width="30px"  alt="logo">Sign in with google</button></div>
+                                            <div class="line-part
+                                                                        "><span class="span-or">or Sign In with Email Instead</span></div>
+            <form action="">
+                <div class="form-input">
+                    <label for="username">Username:</label>
+                    <input type="text" class="username" name="username" placeholder="jk9167">
+                    <label for="Password">Password:</label>
+                    <input type="password" class="password" name="Password" placeholder="enter ur pass">
+                </div>
+               
+                            <div class="rem_forgot-pass">
+                                <div class="rem">
+                                    <input type="checkbox" id="Remember_me" name="Remember_me" value="Remember_me">
+                              <label for="Remember_me">Remember me</label><br>
+                        </div>
+                        <div class="forgot-pass">
+                            <a href="forgot-pass.html">Forgot Password?</a>
+                        </div>
+                            </div>
+                            <div class="btn-login"> <a href="login.html"><button>Login</button></a></div>
+                            <div class="create-acc">
+                                <span class="span">Not registered yet?</span>
+                                <a href="signup.html" class="new-login_btn">Create New Account</a>
+                            </div>
+            </form></div>
+<!--             <h3 class="h3">New? No Problem.</h3>
+            <div class="btn-placement">
+                <a href="signup.html"><button class="cssbuttons-io">
+                        <span>Create New Account</span>
+                    </button></a>
+            </div> -->
+        <div class="div-2 video-container">
+            
+            <video src="../video/ambulance.mp4"autoplay muted loop>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="footer">
+            <div class="ft-1">
+                <h4>Account</h4>
+                <a href="login.html">Log In</a>
+                <a href="signup.html">Create New Account</a>
+                <a href="delete-ac.html">Delete Your Account</a>
+                <a href="#home">Privacy Policy</a>
+            </div>
+            <div class="ft-2">
+                <h4>Follow Us</h4>
+                <a href="#home">Facebook</a>
+                <a href="#home">Instagram</a>
+                <a href="#home">X(Twitter)</a>
+                <a href="#home">Discord</a>
+            </div>
+
+            <div class="ft-3">
+                <h4>Interactions</h4>
+                <a href="#home">Contact Us</a>
+                <a href="#home">Feedback</a>
+                <a href="#home">About Us</a>
+                <a href="#home">Join Us</a>
+            </div>
+
+            <div class="ft-4">
+                <h4>Services</h4>
+                <a href="#home">Emergency Ambulance Service</a>
+                <a href="#home">Non Emergency Service</a>
+                <a href="#home">Our Application</a>
+                <a href="#home">Donate Us</a>
+            </div>
+        </div> 
+        <div><h5>&copy;2023 SwiftResponse.All Rights Reserved</h5></div>
+    </div>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

@@ -34,11 +34,8 @@ const navtoggle = document.querySelector(".btn-i");
 const nav = document.querySelector("#primary-nav");
 navtoggle.addEventListener("click", function () {
   if (nav.classList.contains("visible")) {
-    /*     primarynav.style.transition = "opacity 800ms, transform 600ms, delay 500ms"; */
-
     nav.classList.remove("visible");
   } else {
     nav.classList.add("visible");
-    /*     primarynav.style.transition = "opacity 800ms, transform 600ms, delay 500ms"; */
   }
 });
