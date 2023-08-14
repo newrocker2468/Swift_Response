@@ -53,7 +53,7 @@ passport.serializeUser((user, done) => {
 passport.deserializeUser((user, done) => {
   done(null, user);
 });
-
+console.log(process.env.CLIENT_ID);
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -67,6 +67,7 @@ passport.use(
       clientSecret: process.env.CLIENT_SECRET,
       callbackURL: process.env.CALLBACK_URL,
       passReqToCallback: true,
+
     },
 
     function (request, accessToken, refreshToken, profile, openid, done) {
@@ -152,6 +153,6 @@ app.get("/auth/google/failure", (req, res) => {
   return url.indexOf("/auth/google/success") !== -1;
 }); */
 
-app.listen(2000, () => {
+app.listen(5000, () => {
   console.log("Server is running on port 2000");
 });
