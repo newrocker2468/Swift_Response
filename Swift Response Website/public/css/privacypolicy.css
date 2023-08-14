@@ -1,0 +1,22 @@
+p{
+    text-align: center;
+    margin: 2em;
+}
+.points{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: numbers;
+
+}
+.points>li{
+    margin:1em;
+}
+.points>.big{
+    /*     margin: 10px 10em 10px 10em; */
+}
+.contact-us-style{
+    text-decoration: underline;
+    
+}

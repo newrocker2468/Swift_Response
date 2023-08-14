@@ -10,117 +10,107 @@
     z-index: -999;
 }
 
-  
-.name{
-    margin: 0.5em !important;
-}
 
-.main {
+
+.main{
     display: grid;
     grid: 100vh / 50% 50%;
     place-content: center;
     place-items: center;
-
+    
 }
-
-.new-login-page,
-.signup-page{
+.new-login-page,.signup-page{
 
     display: flex;
-    justify-content: top;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
+width: 100%;
+height: 100%;
 }
-
-label {
+.new-login-page{
+ 
+    justify-content: flex-start !important;
+}
+label{
     font-size: 1em;
-    font-weight: bold;
-
+    font-weight: 500;
+ 
 }
-
-.rem_forgot-pass {
+.rem_forgot-pass{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.sign-up_google{
-margin: 1em;
-}
-.forgot-pass>a {
+.forgot-pass > a{
     font-size: 0.8em;
     text-decoration: none;
-    color: #37ec7c;
+color: #37ec7c;
     font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-.btn-login,.signup-btn{
+.btn-login{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 1em;
-    
 }
-
-.btn-login>a>button,.signup-btn>a>button {
+.btn-login > a > button{
     padding: 0.7em 10em;
     border-radius: 30px;
-    border: none;
+        border: none;
+}
+.form-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.name{
+    margin: 0.5em !important;
+}
+.sign-in_btn{
     font-weight: bold;
 }
-
-.form-input {
+.username,.password{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.username,
-.password,.Email,.re-password {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 1em;
+    margin:1em;
     border-radius: 30px;
 color: rgb(34, 34, 34);
-    background: linear-gradient(142.99deg, rgba(217, 217, 217, 0.63) 15.53%, rgba(243, 243, 243, 0.63) 88.19%);
-    box-shadow: 0px 12px 24px -1px rgba(0, 0, 0, 0.18);
+ /*    background: linear-gradient(142.99deg, rgba(217, 217, 217, 0.63) 15.53%, rgba(243, 243, 243, 0.63) 88.19%);
+    box-shadow: 0px 12px 24px -1px rgba(0, 0, 0, 0.18); */
     border-color: rgba(7, 4, 14, 0);
     border-radius: 50px;
-    padding: 1em 1em;
+    padding:1em 1em;
     width: 100%;
     border: 2px solid #e4e4e4;
 }
-
-.new-login_btn {
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #37ec7c;
+.new-login_btn{
+        font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #37ec7c;
 }
+.sign-in_btn{
 
-.sign-up_btn {
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 0.5em 7em;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #FFFFFF;
-    border: 2px solid #e4e4e4;
-    font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 0.5em 7em;
+                border-radius: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background:#FFFFFF;
+                margin: 1em;
+                border: 2px solid #e4e4e4;
 }
-
-button {
+button{
     cursor: pointer !important;
 }
-
-
-
+.new-login-page{
+    background: #FFFFFF;
+}
 .cssbuttons-io {
     position: relative;
     font-family: inherit;
@@ -137,7 +127,6 @@ button {
     border: 1px solid #000;
 
 }
-
 .video-container {
     position: relative;
     width: 100%;
@@ -146,6 +135,7 @@ button {
     /* Set the desired height */
     overflow: hidden;
     border-radius: 20px;
+    right:5px;
 }
 
 .video-container video {
@@ -156,7 +146,6 @@ button {
     height: 100%;
     /* Cover the entire height of the container */
 }
-
 .cssbuttons-io:hover {
     color: #000;
     border: 1px solid #EBF6F4;

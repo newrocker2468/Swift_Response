@@ -1,0 +1,212 @@
+.content {
+    min-height: 100vh;
+    text-align: center;
+    font-style: italic;
+}
+
+#wave {
+    position: absolute;
+    top: 0px;
+    z-index: -999;
+}
+
+  
+.name{
+    margin: 0.5em !important;
+}
+
+.main {
+    display: grid;
+    grid: 100vh / 50% 50%;
+    place-content: center;
+    place-items: center;
+
+}
+
+.new-login-page,
+.signup-page{
+
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+label {
+    font-size: 1em;
+    font-weight: bold;
+
+}
+
+.rem_forgot-pass {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sign-up_google{
+margin: 1em;
+}
+.forgot-pass>a {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #37ec7c;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-login,.signup-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    
+}
+
+.btn-login>a>button,.signup-btn>a>button {
+    padding: 0.7em 10em;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+}
+
+.form-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.username,
+.password,.Email,.re-password {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1em;
+    border-radius: 30px;
+color: rgb(34, 34, 34);
+/*     background: linear-gradient(142.99deg, rgba(217, 217, 217, 0.63) 15.53%, rgba(243, 243, 243, 0.63) 88.19%);
+    box-shadow: 0px 12px 24px -1px rgba(0, 0, 0, 0.18); */
+    border-color: rgba(7, 4, 14, 0);
+    border-radius: 50px;
+    padding: 1em 1em;
+    width: 100%;
+    border: 2px solid #e4e4e4;
+}
+
+.new-login_btn {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #37ec7c;
+}
+
+.sign-up_btn {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0.5em 7em;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 2px solid #e4e4e4;
+    font-weight: bold;
+}
+
+button {
+    cursor: pointer !important;
+}
+
+
+
+.cssbuttons-io {
+    position: relative;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border-radius: 0.8em;
+    border: none;
+    background: linear-gradient(to right, #A2F2F5, #BCF7E4);
+    color: black;
+    overflow: hidden;
+    width: max-content;
+    cursor: pointer;
+    border: 1px solid #000;
+
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    /* Set the desired width */
+    height: 100vh;
+    /* Set the desired height */
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    /* Cover the entire height of the container */
+}
+
+.cssbuttons-io:hover {
+    color: #000;
+    border: 1px solid #EBF6F4;
+}
+
+.cssbuttons-io svg {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.5em;
+}
+
+.cssbuttons-io span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.cssbuttons-io::before {
+    content: "";
+    background: #EBF6F4;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cssbuttons-io:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+.cssbuttons-io:active {
+    transform: scale(0.95);
+}
+
+/* .btn-placement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+} */
