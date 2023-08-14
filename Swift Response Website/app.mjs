@@ -1,11 +1,12 @@
 // import express and hbs modules
+import dotenv from 'dotenv';
 import Express from "express";
 import passport from "passport";
 import Strategy from "passport-google-oauth2";
 const GoogleStrategy = Strategy.Strategy;
 import cookieSession from "cookie-session";
 import { engine } from "express-handlebars";
-import Handlebars from "handlebars";
+dotenv.config();
 const app = Express();
 import cookieParser from "cookie-parser";
 app.use(Express.static("public"));
@@ -62,9 +63,9 @@ passport.use(
   new GoogleStrategy(
     {
       clientID:
-        "435165680112-pg2fsaas8o9l4drdp26eh49sasgr47j2.apps.googleusercontent.com",
-      clientSecret: "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",
-      callbackURL: "http://localhost:2000/auth/google/callback",
+      "process.env.CLIENT_ID",
+      clientSecret: "process.env.CLIENT_SECRET",
+      callbackURL: "process.env.CALLBACK_URL",
       passReqToCallback: true,
     },
 

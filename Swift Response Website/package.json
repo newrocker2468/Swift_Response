@@ -5,9 +5,12 @@
   "version": "1.0.0",
     
   "type": "module",
-
+    
   "scripts": {
-    "start" : "node app.mjs"
+    
+      
+  "start": "node app.mjs"
+    
   },
     
   "dependencies": {
@@ -17,6 +20,9 @@
     
       
   "cookie-session": "^2.0.0",
+    
+      
+  "dotenv": "^16.3.1",
     
       
   "ejs": "^3.1.9",
