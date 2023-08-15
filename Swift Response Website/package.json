@@ -58,9 +58,6 @@
   "passport-google-oauth2": "^0.2.0",
     
       
-  "path": "^0.12.7",
-    
-      
   "url": "^0.11.1"
     
   }
