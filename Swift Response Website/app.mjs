@@ -153,6 +153,6 @@ app.get("/auth/google/failure", (req, res) => {
   return url.indexOf("/auth/google/success") !== -1;
 }); */
 
-app.listen(5000, () => {
+app.listen(2000, () => {
   console.log("Server is running on port 2000");
 });
