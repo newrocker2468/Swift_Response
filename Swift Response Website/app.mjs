@@ -29,13 +29,18 @@ app.get("/index", (req, res) => {
 
 app.get("/login", (req, res) => {
   action = "login";
-  console.log(action);
+
   res.render("login", { title: "Log In" });
+});
+
+app.get("/donateus",(req,res)=>{
+
+  res.render("donateus",{title:"Donate Us"})
 });
 
 app.get("/signup", (req, res) => {
   action = "signup";
-  console.log(action);
+
   res.render("signup", { title: "Sign Up" });
 });
 app.use(
@@ -53,7 +58,7 @@ passport.serializeUser((user, done) => {
 passport.deserializeUser((user, done) => {
   done(null, user);
 });
-console.log(process.env.CLIENT_ID);
+
 app.use(passport.initialize());
 app.use(passport.session());
 

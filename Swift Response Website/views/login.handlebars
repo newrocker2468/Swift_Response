@@ -1,48 +1,79 @@
-<link rel="stylesheet" href="/css/login.css">
+<link rel="stylesheet" href="/css/login.css" />
 <div class="main">
-    <div class="div-1 new-login-page">
+  <div class="div-1 new-login-page">
 
-        <h1 class="name">Login</h1>
-        <div class="sign-in_google"><button class="sign-in_btn" onclick="window.location.href = '/auth/google'"><img src="/icons/google_icon.png" width="30px"
-                    alt="logo">Sign in with google</button></div>
-        <div class="line-part
-                                                                        "><span class="span-or">or Sign In with Email
-                Instead</span></div>
-        <form action="">
-            <div class="form-input">
-                <label for="username">Username:</label>
-                <input type="text" class="username" name="username" placeholder="jk9167">
-                <label for="Password">Password:</label>
-                <input type="password" class="password" name="Password" placeholder="enter ur pass">
-            </div>
+    <h1 class="name">Login</h1>
+    <div class="sign-in_google"><button
+        class="sign-in_btn"
+        onclick="window.location.href = '/auth/google'"
+      ><img src="/icons/google_icon.png" width="30px" alt="logo" />Sign in with
+        google</button></div>
+    <div class="line-part"><span class="span-or">or Sign In with Email Instead</span></div>
+    <form action="">
+      <div class="form-input">
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          class="username"
+          name="username"
+          placeholder="jk9167"
+        />
+        <label for="Password">Password:</label>
+        <input
+          type="password"
+          class="password"
+          name="Password"
+          placeholder="enter ur pass"
+        />
+      </div>
 
-            <div class="rem_forgot-pass">
-                <div class="rem">
-                    <input type="checkbox" id="Remember_me" name="Remember_me" value="Remember_me">
-                      <label for="Remember_me">Remember me</label><br>
-                </div>
-                <div class="forgot-pass">
-                    <a href="forgot-pass.html">Forgot Password?</a>
-                </div>
-            </div>
-            <div class="btn-login"> <a href="login.html"><button>Login</button></a></div>
-            <div class="create-acc">
-                <span class="span">Not registered yet?</span>
-                <a href="signup" class="new-login_btn">Create New Account</a>
-            </div>
-        </form>
-    </div>
-    <!--             <h3 class="h3">New? No Problem.</h3>
+      <div class="rem_forgot-pass">
+        <div class="rem">
+          <input
+            type="checkbox"
+            id="Remember_me"
+            name="Remember_me"
+            value="Remember_me"
+          />
+           
+          <label for="Remember_me">Remember me</label><br />
+        </div>
+        <div class="forgot-pass">
+          <a href="forgot-pass.html">Forgot Password?</a>
+        </div>
+      </div>
+      <div class="btn-login">
+        <a href="login.html"><button>Login</button></a></div>
+      <div class="create-acc">
+        <span class="span">Not registered yet?</span>
+        <a href="signup" class="new-login_btn">Create New Account</a>
+      </div>
+    </form>
+  </div>
+  <!--             <h3 class="h3">New? No Problem.</h3>
             <div class="btn-placement">
                 <a href="signup.html"><button class="cssbuttons-io">
                         <span>Create New Account</span>
                     </button></a>
             </div> -->
-    <div class="div-2 video-container">
+  <div class="div-2 video-container">
 
-        <video src="/video/ambulance.mp4" autoplay muted loop>
-            Your browser does not support the video tag.
-        </video>
-    </div>
+    <video
+      src="/video/ambulance.mp4"
+      autoplay
+      muted
+      loop
+      alt="Your browser does not support the video tag."
+    >
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
 </div>
+<script>
+  window.addEventListener("load", function () { const div1 =
+  document.querySelector(".div-1"); const div2 =
+  document.querySelector(".div-2"); div1.style.animation = "fadeIn-right
+  750ms,opacity 1200ms"; div2.style.animation = "fadeIn-left 750ms ,opacity
+  1200ms"; })
+</script>

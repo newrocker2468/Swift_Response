@@ -8,6 +8,7 @@
         left: 20%;
         background-color: #5affc0;
         z-index: -9999;
+        animation: animate 7s ease-in-out;
     }
 
     .nav-links::after {
@@ -19,8 +20,17 @@
         right: 20%;
         background-color: #5affc0;
         z-index: -9999;
+        animation: animate 7s ease-in-out;
     }
 
+}
+@keyframes animate{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 .img-1 {
@@ -121,7 +131,7 @@
     margin: 1em;
 }
 
-@media(max-width:495px) {
+@media(max-width:560px) {
     .search {
         flex-wrap: wrap;
     }

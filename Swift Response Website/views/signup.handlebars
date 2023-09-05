@@ -2,8 +2,10 @@
 <div class="main">
     <div class="div-1 signup-page">
         <h1 class="name">Sign Up</h1>
-        <div class="sign-up_google"><button class="sign-up_btn" onclick="window.location.href = 'auth/google'"><img src="/icons/google_icon.png" width="30px"
+        <div class="sign-up_google"><button class="sign-up_btn" onclick="window.location.href = 'auth/google'"><img src="/icons/google_icon.svg" width="35px"
                     alt="logo">Sign Up With Google</button></div>
+                    <div class="sign-up_google"><button class="sign-up_btn" onclick="window.location.href = 'auth/google'"><img src="/icons/github-mark.svg" width="30px"
+                    alt="logo">Sign Up With Github</button></div>
         <div class="line-part
                             "><span class="span-or">or Sign up with Email Instead</span></div>
 
@@ -46,4 +48,14 @@
     </div>
 
 </div>
-<script src="/js/index.js"></script>
+<script>
+    window.addEventListener("load", function () {
+    const div1 = document.querySelector(".div-1");
+    const div2 = document.querySelector(".div-2");
+
+
+    div1.style.animation = "fadeIn-right 750ms,opacity 1200ms,delay 600ms";
+    div2.style.animation = "fadeIn-left 750ms ,opacity 1200ms";
+})
+</script>
+<script src="/js/common.js"></script>

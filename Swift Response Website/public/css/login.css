@@ -17,6 +17,7 @@
     grid: 100vh / 50% 50%;
     place-content: center;
     place-items: center;
+    margin-top: 10px;
     
 }
 .new-login-page,.signup-page{
@@ -27,11 +28,9 @@
     flex-direction: column;
 width: 100%;
 height: 100%;
+background: transparent;
 }
-.new-login-page{
- 
-    justify-content: flex-start !important;
-}
+
 label{
     font-size: 1em;
     font-weight: 500;
@@ -108,9 +107,7 @@ color: rgb(34, 34, 34);
 button{
     cursor: pointer !important;
 }
-.new-login-page{
-    background: #FFFFFF;
-}
+
 .cssbuttons-io {
     position: relative;
     font-family: inherit;
