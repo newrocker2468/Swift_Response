@@ -24,6 +24,9 @@ app.get("/", (req, res) => {
 app.get("/index", (req, res) => {
   res.render("index", { title: "Swift Response" });
 });
+app.get("/donateus", (req, res) => {
+  res.render("donateus", { title: "Swift Response" });
+});
 app.get("/aboutus", (req, res) => {
   res.render("aboutus", { title: "About Us" });
 });
