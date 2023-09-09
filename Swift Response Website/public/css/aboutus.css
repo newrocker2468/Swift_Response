@@ -1,0 +1,140 @@
+p{
+    margin: 0.7em 2em;
+}
+.profile-pic img{
+border-radius: 50%;
+width: 2.5em;
+}
+.profile-pic{
+display: flex;
+align-items: center;
+justify-content: flex-start;
+gap: 1em;   
+}
+
+
+.profile-name,.description{
+    font-size: 0.9rem;
+    font-family: "Barlow Semi Condensed",
+        sans-serif;
+    color: hsl(0 0% 100%);
+}
+.profile-name{
+    color: white;
+}
+.description{
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description > svg{
+    margin: 0.2em;
+}
+.review-box{
+
+    border-radius: 10px;
+        font-family: "Barlow Semi Condensed",
+                sans-serif;
+                padding: 2rem;
+}
+.overview{
+  color: white;
+
+
+        font-size: 1.25rem;
+}
+.rev-box-1{
+background-image: url("/image/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+        background-color: hsl(263 55% 52%);
+}
+.rev-box-2{
+    background-color: hsl(217 19% 35%);
+}
+.detail-review,.overview{
+    margin-top: 20px;
+}
+.detail-review{
+    color: hsl(0, 0%, 100%);
+
+    opacity: 0.7;
+       
+}
+.invert{
+    color: black;
+}
+.rev-box-3,.rev-box-5{
+    background-color: hsl(0 0% 100%);
+    border: 1px solid hsl(0, 0%, 90%);
+   box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(217 19% 35% / 0.25)
+}
+.rev-box-4{
+    background-color: hsl(219 29% 14%);
+}
+.user-review-container{
+    display: grid;
+    place-content: center;
+    gap: 1.5em;
+    width: 95vw;
+    margin: 1em;
+        grid-template-areas:
+        'one'
+        'two'
+        'three'
+        'four'
+        'five';
+}
+
+@media screen and (min-width: 33em) {
+    .user-review-container {
+        grid-template-areas:
+            "one one"
+            "two three"
+            "five five"
+            "four four";
+    }
+}
+
+@media screen and (min-width: 38em) {
+.user-review-container{
+        grid-template-areas:
+            'one one'
+            'two five'
+            'three five'
+            'four four';
+    }
+}
+
+@media screen and (min-width: 54em) {
+.user-review-container {
+        grid-template-areas:
+            "one one two"
+            "five five five"
+            "three four four";
+    }
+}
+
+@media screen and (min-width: 75em) {
+.user-review-container {
+        grid-template-areas:
+            "one one two five"
+            "three four four five";
+    }
+}
+.rev-box-1{
+    grid-area: one;
+}
+.rev-box-2{
+    grid-area: two;
+}
+.rev-box-3{
+    grid-area: three;
+}
+.rev-box-4{
+    grid-area: four;
+}
+.rev-box-5{
+    grid-area: five;
+}

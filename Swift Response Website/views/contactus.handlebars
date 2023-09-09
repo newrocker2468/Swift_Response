@@ -1,4 +1,11 @@
 <link rel="stylesheet" href="/css/contactus.css" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+/>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"
+></script>
 <div class="container">
   <h1>Contact Us</h1>
   <p>Please fill in this form to contact us.</p>
@@ -46,3 +53,10 @@
     6524 N Albina Avenue<br />
     Portland, Oregon 97217<br />
     SwiftresponseInc@gmail.com<br /></div></div>
+<script>
+  const phoneInputField = document.querySelector("#mobile-no"); const phoneInput
+  = window.intlTelInput(phoneInputField, { initialCountry:
+  "in",separateDialCode: true,utilsScript:
+  "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+  });
+</script>

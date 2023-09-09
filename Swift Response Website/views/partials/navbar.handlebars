@@ -1,27 +1,30 @@
-
-
 <div class="navbar">
-    <div class="logo">
-        <i class="fa-brands fa-pix fa-2xl hid-logo"></i>
-    </div>
-    <div class="logo-name"><a href="index"><span class="name">SwiftResponse</span></a></div>
-    <div class="nav-links">
-        <ul class="list" id="primary-nav" data-visible="false">
-            <li><a href="index" id="home">Home</a></li>
-            <li><a href="#services" id="services">Services</a></li>
-            <li><a href="#Aboutus" id="Aboutus">About Us</a></li>
-            <li><a href="contactus" id="contact">Contact Us</a></li>
+  <div class="logo">
+    <i class="fa-brands fa-pix fa-2xl hid-logo"></i>
+  </div>
+  <div class="logo-name"><a href="index"><span
+        class="name"
+      >SwiftResponse</span></a></div>
+  <div class="nav-links">
+    <ul class="list" id="primary-nav" data-visible="false">
+      <li><a href="index" id="home">Home</a></li>
+      <li><a href="#services" id="services">Services</a></li>
+      <li><a href="aboutus" id="Aboutus">About Us</a></li>
+      <li><a href="contactus" id="contact">Contact Us</a></li>
 
-        </ul>
-    </div>
-    <div class="login">
-        <a><button id="btn" onclick="checkloggedIn()">Log In</button></a>
-{{!--         <div class="donate-us"><i class="fas fa-donate fa-lg" style="color: #000000;" onclick="window.location.href='/donateus'"></i>
+    </ul>
+  </div>
+  <div class="login">
+    <a><button id="btn" onclick="checkloggedIn()">Log In</button></a>
+    {{!         <div class="donate-us"><i class="fas fa-donate fa-lg" style="color: #000000;" onclick="window.location.href='/donateus'"></i>
         <h6>Donate Us</h6>
-        </div> --}}
+        </div> }}
 
-        <button class="btn-i"><i class="fa-solid fa-bars fa-lg" id="menu"></i></button>
-    </div>
+    <button class="btn-i"><i
+        class="fa-solid fa-bars fa-lg"
+        id="menu"
+      ></i></button>
+  </div>
 </div>
 {{!-- {{#if (isAuthSuccess url)}}
 <div class="login">
@@ -33,28 +36,15 @@
 {{/if}} --}}
 
 <script>
-    window.onload = () => {
-        const lgn = document.getElementById('btn');
-        const logged_in_cookie = document.cookie.split(';').some((item) => item.trim().startsWith('logged_in='));
+  window.onload = () => { const lgn = document.getElementById('btn'); const
+  logged_in_cookie = document.cookie.split(';').some((item) =>
+  item.trim().startsWith('logged_in=')); if (logged_in_cookie) { lgn.innerHTML =
+  'Log Out'; } else { lgn.innerHTML = 'Log In'; } } const checkloggedIn = () =>
+  { const logged_in_cookie = document.cookie.split(';').every((item) =>
+  item.trim().startsWith('logged_in=')); if (logged_in_cookie) {
+  document.cookie.split(';').forEach((c) => { document.cookie = c.replace(/^ +/,
+  '').replace(/=.*/, '=;expires=' + new Date().toUTCString() + ';path=/');})
+  window.location.href = '/index'; } else { window.location.href = '/login'; }
+  };
 
-        if (logged_in_cookie) {
-            lgn.innerHTML = 'Log Out';
-        } else {
-            lgn.innerHTML = 'Log In';
-        }
-    }
-
-    const checkloggedIn = () => {
-        const logged_in_cookie = document.cookie.split(';').every((item) => item.trim().startsWith('logged_in='));
-
-        if (logged_in_cookie) {
-            document.cookie.split(';').forEach((c) => {
-                document.cookie = c.replace(/^ +/, '').replace(/=.*/, '=;expires=' + new Date().toUTCString() + ';path=/');})
-                window.location.href = '/index';
-            
-        } else {
-            window.location.href = '/login';
-        }
-    };
-        
 </script>

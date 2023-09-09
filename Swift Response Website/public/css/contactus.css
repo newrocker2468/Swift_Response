@@ -45,12 +45,16 @@
 .contactus-form{
 
         display: grid;
-        grid-template-columns: auto auto;
         gap: 2em;
         margin: 1rem;
    
 }
 
+@media (min-width:780px){
+    .contactus-form{
+                grid-template-columns: auto auto;
+    }
+}
 .full-width{
     grid-column: 1/-1;
 }
@@ -70,6 +74,7 @@ button{
         border: none;
             padding: 1em;
             font-weight: bolder;
+            cursor: pointer;
 }
 input{
 

@@ -1,5 +1,5 @@
 // import express and hbs modules
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 import Express from "express";
 import passport from "passport";
 import Strategy from "passport-google-oauth2";
@@ -19,23 +19,22 @@ let userProfile;
 let action;
 
 app.get("/", (req, res) => {
-
   res.render("index", { title: "Swift Response" });
 });
 app.get("/index", (req, res) => {
-
   res.render("index", { title: "Swift Response" });
 });
-
+app.get("/aboutus", (req, res) => {
+  res.render("aboutus", { title: "About Us" });
+});
 app.get("/login", (req, res) => {
   action = "login";
 
   res.render("login", { title: "Log In" });
 });
 
-app.get("/donateus",(req,res)=>{
-
-  res.render("donateus",{title:"Donate Us"})
+app.get("/donateus", (req, res) => {
+  res.render("donateus", { title: "Donate Us" });
 });
 
 app.get("/signup", (req, res) => {
@@ -67,12 +66,10 @@ app.use(passport.session());
 passport.use(
   new GoogleStrategy(
     {
-      clientID:
-      process.env.CLIENT_ID,
+      clientID: process.env.CLIENT_ID,
       clientSecret: process.env.CLIENT_SECRET,
       callbackURL: process.env.CALLBACK_URL,
       passReqToCallback: true,
-
     },
 
     function (request, accessToken, refreshToken, profile, openid, done) {
@@ -118,10 +115,10 @@ app.get("/auth/google/success/privacypolicy", (req, res) => {
   res.render("privacypolicy", { title: "privacypolicy" });
 });
 app.get("/auth/google/success/index", (req, res) => {
-  if(action === "login"){
-  res.cookie("logged_in", userProfile);
-  res.redirect("/index");}
-  else{
+  if (action === "login") {
+    res.cookie("logged_in", userProfile);
+    res.redirect("/index");
+  } else {
     res.redirect("/login");
   }
 });
@@ -145,8 +142,6 @@ app.get("/auth/google/success/login", (req, res) => {
 app.get("/auth/google/failure", (req, res) => {
   res.render("index", { title: "index" });
 });
-
-
 
 /* app.get("/auth/google/success"),
   (req, res) => {
