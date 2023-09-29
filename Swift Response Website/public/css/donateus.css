@@ -1,0 +1,175 @@
+.donate-us-img {
+    width: 100%;
+    height: 90dvh;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+    position: relative;
+}
+
+.img-title {
+    display: inline-block;
+}
+
+label[for="amount"] {
+    display: inline-block;
+}
+
+img {
+    display: inline;
+}
+
+form {
+    display: grid;
+    place-items: center;
+    gap: 1em;
+}
+
+p {
+    margin: 0 1.5em;
+}
+
+.amts {
+    gap: 1em;
+    display: flex;
+    margin-top: 1em;
+}
+
+.full-container {
+    display: grid;
+    grid: 100vh / 50% 50%;
+}
+
+.title {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.amts>button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: bolder;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.amts>button:hover {
+    background-color: #5affc0;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #000000;
+    transform: translateY(-7px);
+}
+
+.amts>button:active {
+    transform: translateY(-1px);
+}
+
+.input-container {
+    position: relative;
+    margin: 1em;
+}
+
+.label-img {
+    display: flex;
+    justify-content: center;
+}
+
+.enter-amt {
+    display: block !important;
+}
+
+.input {
+    font-size: 1em;
+    padding: 0.6em 1em;
+    border: none;
+    border-radius: 6px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    max-width: 200px;
+    color: #333;
+}
+
+.input:hover,
+.input:focus {
+    background-color: #f2f2f2;
+    border: none !important;
+}
+
+.input:focus {
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input::placeholder {
+    color: #999;
+}
+
+.highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #59ff00;
+    transition: width 0.3s ease;
+}
+
+.input:focus+.highlight {
+    width: 100%;
+}
+
+
+/* Optional: Animation on focus */
+
+@keyframes input-focus {
+    from {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+    }
+    to {
+        transform: scale(1.02);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.input:focus {
+    animation: input-focus 0.3s ease;
+}
+
+.main-container,
+.enter-amt,
+.enter-name {
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+@media(min-width:750px) {
+    .main-container,
+    .enter-amt {
+        flex-direction: row;
+    }
+}
+
+@media(max-width:750px) {
+    .main-container,
+    .enter-name,
+    .enter-amt {
+        flex-direction: column;
+    }
+}

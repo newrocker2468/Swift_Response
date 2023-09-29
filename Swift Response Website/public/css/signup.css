@@ -10,22 +10,21 @@
     z-index: -999;
 }
 
-  
-.name{
+.name {
     margin: 0.5em !important;
 }
 
-.main {
-    display: grid;
-    grid: 100vh / 50% 50%;
-    place-content: center;
-    place-items: center;
-
+@media(min-width:840px) {
+    .main {
+        display: grid;
+        grid: 100vh / 50% 50%;
+        place-content: center;
+        place-items: center;
+    }
 }
 
 .new-login-page,
-.signup-page{
-
+.signup-page {
     display: flex;
     justify-content: top;
     align-items: center;
@@ -37,7 +36,6 @@
 label {
     font-size: 1em;
     font-weight: bold;
-
 }
 
 .rem_forgot-pass {
@@ -45,9 +43,11 @@ label {
     justify-content: space-between;
     align-items: center;
 }
-.sign-up_google{
-margin: 1em;
+
+.sign-up_google {
+    margin: 1em;
 }
+
 .forgot-pass>a {
     font-size: 0.8em;
     text-decoration: none;
@@ -56,15 +56,16 @@ margin: 1em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.btn-login,.signup-btn{
+.btn-login,
+.signup-btn {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 1em;
-    
 }
 
-.btn-login>a>button,.signup-btn>a>button {
+.btn-login>a>button,
+.signup-btn>a>button {
     padding: 0.7em 10em;
     border-radius: 30px;
     border: none;
@@ -79,15 +80,17 @@ margin: 1em;
 }
 
 .username,
-.password,.Email,.re-password {
+.password,
+.Email,
+.re-password {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 1em;
     border-radius: 30px;
-color: rgb(34, 34, 34);
-/*     background: linear-gradient(142.99deg, rgba(217, 217, 217, 0.63) 15.53%, rgba(243, 243, 243, 0.63) 88.19%);
+    color: rgb(34, 34, 34);
+    /*     background: linear-gradient(142.99deg, rgba(217, 217, 217, 0.63) 15.53%, rgba(243, 243, 243, 0.63) 88.19%);
     box-shadow: 0px 12px 24px -1px rgba(0, 0, 0, 0.18); */
     border-color: rgba(7, 4, 14, 0);
     border-radius: 50px;
@@ -103,7 +106,6 @@ color: rgb(34, 34, 34);
 }
 
 .sign-up_btn {
-
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0.5em 7em;
     border-radius: 30px;
@@ -119,8 +121,6 @@ button {
     cursor: pointer !important;
 }
 
-
-
 .cssbuttons-io {
     position: relative;
     font-family: inherit;
@@ -135,26 +135,33 @@ button {
     width: max-content;
     cursor: pointer;
     border: 1px solid #000;
-
 }
 
-.video-container {
-    position: relative;
-    width: 100%;
-    /* Set the desired width */
-    height: 100vh;
-    /* Set the desired height */
-    overflow: hidden;
-    border-radius: 20px;
+@media(max-width:839.5px) {
+    .video-container,
+    .video-container video {
+        display: none;
+    }
 }
 
-.video-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: auto;
-    height: 100%;
-    /* Cover the entire height of the container */
+@media(min-width:840px) {
+    .video-container {
+        position: relative;
+        width: 100%;
+        /* Set the desired width */
+        height: 100vh;
+        /* Set the desired height */
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    .video-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: 100%;
+        /* Cover the entire height of the container */
+    }
 }
 
 .cssbuttons-io:hover {
@@ -203,6 +210,7 @@ button {
 .cssbuttons-io:active {
     transform: scale(0.95);
 }
+
 
 /* .btn-placement {
     display: flex;

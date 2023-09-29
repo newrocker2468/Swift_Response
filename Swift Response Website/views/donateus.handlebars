@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="/css/donateus.css" />
+<div class="full-container"><div class="img-title">
+    <div class="title"><h1>Donate Us!</h1></div>
+    <img
+      src="/image/donate-us.webp"
+      alt="Image not supported"
+      class="donate-us-img"
+    />
+  </div>
+  <form action="">
+    <div class="amts">
+      <button class="b1" type="button">$25</button>
+      <button class="b2" type="button">$50</button>
+      <button class="b3" type="button">$100</button>
+    </div>
+    <div class="main-container">
+      <div class="enter-amt">
+       <div class="label-img">
+         <label for="amount">Enter Custom Amount</label>
+        <img
+          src="/icons/dollar-symbol.png"
+          width="17px"
+          height="17px"
+          alt="Image not supported"
+          class="dollar-sign"
+        />
+       </div>
+        <div class="input-container">
+          <input
+            type="number"
+            id="amount"
+            class="amount input"
+            name="amt"
+            placeholder="$100"
+            value=""
+          />
+          <div class="highlight"></div>
+        </div></div>
+      <div class="enter-name">
+        <label for="name">Name:</label><div class="input-container">
+
+          <input type="text" class="input" name="name" id="name" />
+          <div class="highlight"></div></div></div>
+
+    </div>
+    <p>Note: You can leave name field as it is optional,if name is not provided
+      donation will be considered as anonymous</p>
+
+    <input type="submit" value="Donate Us" />
+
+  </form></div>
+<script src="/js/donateus.js"></script>
