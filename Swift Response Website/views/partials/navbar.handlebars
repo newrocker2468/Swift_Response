@@ -29,7 +29,7 @@
 {{!-- {{#if (isAuthSuccess url)}}
 <div class="login">
     <a href="login" style="display: none;"><button id="btn">Log In</button></a>
-{{else}}> 
+{{#else}}
 <!-- display the button -->
 <div class="login">
     <a href="login" style="display: none;"><button id="btn">Log In</button></a>
@@ -38,7 +38,7 @@
 <script>
 window.onload = () => {
     const lgn = document.getElementById("btn");
-    const logged_in_cookie = document.cookie.split(";").some((item) => item.trim().startsWith("logged_in="));
+    const logged_in_cookie = document.cookie.split(";").every((item) => item.trim().startsWith("logged_in="));
     if (logged_in_cookie) {
         lgn.innerHTML = "Log Out";
     } else {

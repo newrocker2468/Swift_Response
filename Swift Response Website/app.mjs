@@ -37,20 +37,20 @@ app.get("/aboutus", (req, res) => {
     res.render("aboutus", { title: "About Us" });
 });
 app.get("/login", (req, res) => {
-
-
+    action = "login";
+  
     res.render("login", { title: "Log In" });
-});
+  });
 
 app.get("/donateus", (req, res) => {
     res.render("donateus", { title: "Donate Us" });
 });
 
 app.get("/signup", (req, res) => {
-
-
+    action = "signup";
+  
     res.render("signup", { title: "Sign Up" });
-});
+  });
 
 app.use(
     cookieSession({
@@ -116,13 +116,13 @@ app.get("/deleteac", (req, res) => {
     res.render("deleteac", { title: "Delete" });
 });
 
-app.get("/auth/google/success/deleteac", (req, res) => {
-    res.redirect("/deleteac");
-});
+// app.get("/auth/google/success/deleteac", (req, res) => {
+//     res.redirect("/deleteac");
+// });
 
-app.get("/auth/google/success/privacypolicy", (req, res) => {
-    res.render("privacypolicy", { title: "privacypolicy" });
-});
+// app.get("/auth/google/success/privacypolicy", (req, res) => {
+//     res.render("privacypolicy", { title: "privacypolicy" });
+// });
 app.get("/auth/google/success/index", (req, res) => {
     if (action === "login") {
         res.cookie("logged_in", userProfile);
@@ -134,33 +134,30 @@ app.get("/auth/google/success/index", (req, res) => {
 app.get("/contactus", (req, res) => {
     res.render("contactus", { title: "Contact Us" });
 });
-app.get("/auth/google/success/contactus", (req, res) => {
-    res.render("contactus", { title: "Contact Us" });
-});
+// app.get("/auth/google/success/contactus", (req, res) => {
+//     res.render("contactus", { title: "Contact Us" });
+// });
 app.get("/privacypolicy", (req, res) => {
     res.render("privacypolicy", { title: "privacypolicy" });
 });
-/*app.get("/auth/google/success/signup", (req, res) => {
-  res.render("signup", { title: "Sign Up" });
-});
+// app.get("/auth/google/success/signup", (req, res) => {
+//   res.render("signup", { title: "Sign Up" });
+// });
 
-app.get("/auth/google/success/login", (req, res) => {
-  res.render("login", { title: "Log in" });
-}); */
+// app.get("/auth/google/success/login", (req, res) => {
+//   res.render("login", { title: "Log in" });
+// }); 
 
 app.get("/auth/google/failure", (req, res) => {
     res.render("index", { title: "index" });
 });
 
-/* app.get("/auth/google/success"),
+ app.get("/auth/google/success"),
   (req, res) => {
     res.render("index", { title: "index" });
-  }; */
+  }; 
 
-/* Handlebars.registerHelper("isAuthSuccess", function (url) {
-  console.log(url);
-  return url.indexOf("/auth/google/success") !== -1;
-}); */
+
 
 app.listen(2000, () => {
     console.log("Server is running on port 2000");
